@@ -64,8 +64,8 @@ public class AudioManager : MonoBehaviour
         }
 
         //test sound here
-        
-        //PlaySound("bgm");
+        Debug.Log("sound exists");
+        PlaySound("bgm");
     }
 
     
