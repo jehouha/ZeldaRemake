@@ -239,7 +239,7 @@ public class GameMaster : MonoBehaviour
     {
         transform.position = new Vector2(2.0f, 0.0f);
         Camera.main.transform.position = new Vector3(0.0f, 0.0f, -10f);
-        dialogue.SetActive(false);
+        //dialogue.SetActive(false);
     }
 
     // fieldroom1ToFieldroom2
@@ -355,6 +355,9 @@ public class GameMaster : MonoBehaviour
     // Inventory Numbers
     public Text haveKey;
     public GameObject haveSword;
+    public GameObject price;
+    public GameObject wizard;
+    public GameObject merchant;
 
     // Note: Require 'Is Trigger'
     void OnTriggerEnter2D(Collider2D other)
@@ -404,6 +407,9 @@ public class GameMaster : MonoBehaviour
                 rupeeCount = rupeeCount - 5;
                 RupeeCounter();
                 audioManager.PlaySound(pickupSoundName);
+                price.SetActive(false);
+                merchant.SetActive(false);
+                dialogue2.SetActive(false);
             }
             else
             {
@@ -419,6 +425,8 @@ public class GameMaster : MonoBehaviour
             other.gameObject.SetActive(false);
             haveSword.gameObject.SetActive(true);
             audioManager.PlaySound(pickupSoundName);
+            wizard.SetActive(false);
+            dialogue.SetActive(false);
         }
 
         // Doors

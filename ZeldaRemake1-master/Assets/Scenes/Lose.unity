@@ -776,7 +776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "You've met with \na terrible fate\nhaven't you?"
+  m_Text: "You've met with \na terrible fate,\nhaven't you?"
 --- !u!222 &1478027298
 CanvasRenderer:
   m_ObjectHideFlags: 0
