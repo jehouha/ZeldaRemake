@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - enemy
+  - heart
+  - key
+  - sword
+  - rupee
+  - player
+  - fieldroom1ToCave
+  - caveToFieldroom1
+  - fieldroom1ToFieldroom2
+  - fieldroom2ToFieldroom1
+  - fieldroom1ToFieldroom3
+  - fieldroom3ToFieldroom1
+  - fieldroom1ToDungeonroom1
+  - dungeonroom1ToFieldroom1
+  - dungeonroom1ToDungeonroom2
+  - dungeonroom2ToDungeonroom1
+  - dungeonroom2ToBossroom
+  - bossroomToDungeonroom2
+  - fieldroom1ToTree
+  - treeToFieldroom1
+  - playerAttack
+  - powerUp
+  - miniCam
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Enemy
+  - Enemy Projectile
+  - Player
+  - Player Projectile
+  - Minimap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3326961251
+    locked: 0
+  - name: Foreground
+    uniqueID: 1892843295
+    locked: 0
+  - name: Drops
+    uniqueID: 1057637029
+    locked: 0
+  - name: Enemy
+    uniqueID: 2290412557
+    locked: 0
+  - name: NPC
+    uniqueID: 1581230611
+    locked: 0
+  - name: rangedAttacks
+    uniqueID: 3894040919
+    locked: 0
+  - name: Player
+    uniqueID: 1556078663
+    locked: 0
+  - name: UI Background
+    uniqueID: 2996221315
+    locked: 0
+  - name: UI
+    uniqueID: 378571959
+    locked: 0
