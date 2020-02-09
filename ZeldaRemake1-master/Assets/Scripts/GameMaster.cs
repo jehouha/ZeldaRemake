@@ -480,7 +480,7 @@ public class GameMaster : MonoBehaviour
                 Debug.Log("gone thru door");
                 CameraMove7();
                 audioManager.PlaySound(doorSoundName);
-                keyHeld = false;
+                //keyHeld = false;
             }
             else
             {
