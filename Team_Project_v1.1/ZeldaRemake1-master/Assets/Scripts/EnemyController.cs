@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioManager = AudioManager.instance;
     }
 
     // Update is called once per frame
@@ -39,6 +39,11 @@ public class EnemyController : MonoBehaviour
     // 2D Collider Triggers Script //
     /////////////////////////////////
 
+    // Reference AudioManager script
+    private AudioManager audioManager;
+
+    public string enemyHitSoundName;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log("enemy hit");
@@ -47,6 +52,7 @@ public class EnemyController : MonoBehaviour
             Debug.Log("enemy damage taken");
             lives--;
             lifeCounter();
+            audioManager.PlaySound(enemyHitSoundName);
         }
     }
 }

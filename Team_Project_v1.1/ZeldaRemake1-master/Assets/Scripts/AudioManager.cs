@@ -10,7 +10,7 @@ public class Sound
     [Range(0f,1f)]
     public float volume = 0.7f;
     [Range(0.5f, 1.5f)]
-    public float pitch = 1f;
+    public float pitch = 1.0f;
 
     public bool loop = false;
 
@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
 
         //test sound here
         Debug.Log("sound exists");
-        PlaySound("bgm");
+        //PlaySound("bgm");
     }
 
     

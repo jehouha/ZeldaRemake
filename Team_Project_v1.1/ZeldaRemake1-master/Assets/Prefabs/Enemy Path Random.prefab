@@ -331,6 +331,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 1
+  lootDrop: {fileID: 8168399081699810125, guid: 21d22f565cf0bb04a8dc47e8c0dce844,
+    type: 3}
+  enemyHitSoundName: enemyHit
 --- !u!114 &2446321270426350486
 MonoBehaviour:
   m_ObjectHideFlags: 0
