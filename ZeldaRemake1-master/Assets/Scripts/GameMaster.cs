@@ -223,14 +223,15 @@ public class GameMaster : MonoBehaviour
     //        Camera Script        //
     /////////////////////////////////
 
-    public GameObject dialogue;
+    public GameObject dialogue, dialogue2;
     
     // fieldroom1ToCave
     void CameraMove1()
     {
         transform.position = new Vector2(-23.0f, 6.0f);
         Camera.main.transform.position = new Vector3(-23.0f, 11.15f, -10f);
-        Instantiate(dialogue, new Vector2(2f, 109f), Quaternion.identity);
+        //Instantiate(dialogue, new Vector2(0f, -20f), Quaternion.identity, transform.parent);
+        dialogue.SetActive(true);
     }
 
     // caveToFieldroom1
@@ -238,6 +239,7 @@ public class GameMaster : MonoBehaviour
     {
         transform.position = new Vector2(2.0f, 0.0f);
         Camera.main.transform.position = new Vector3(0.0f, 0.0f, -10f);
+        dialogue.SetActive(false);
     }
 
     // fieldroom1ToFieldroom2
@@ -315,6 +317,7 @@ public class GameMaster : MonoBehaviour
     {
         transform.position = new Vector2(21.85f, -4.46f);
         Camera.main.transform.position = new Vector3(21.93f, 0.0f, -10f);
+        dialogue2.SetActive(true);
     }
 
     // treeToFieldroom1
@@ -322,6 +325,7 @@ public class GameMaster : MonoBehaviour
     {
         transform.position = new Vector2(7.61f, 1.05f);
         Camera.main.transform.position = new Vector3(0.0f, 0.0f, -10f);
+        dialogue2.SetActive(false);
     }
 
     /////////////////////////////////

@@ -4673,6 +4673,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &396808258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6738508602322649172, guid: b00a28baa73b3784ab74aad7f465f5ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 6738508602146396205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &419052983
 GameObject:
   m_ObjectHideFlags: 0
@@ -16607,8 +16613,8 @@ MonoBehaviour:
   projectile: {fileID: 9018764071332832464, guid: 03032e6718c109a4398b32e082f19567,
     type: 3}
   countAmmo: {fileID: 896814557}
-  dialogue: {fileID: 1405534727635575760, guid: 320538aca70be174ba525afcdf9d4219,
-    type: 3}
+  dialogue: {fileID: 2066481150}
+  dialogue2: {fileID: 396808258}
   bgmSoundName: bgm
   rangedSoundName: ranged
   meleeSoundName: melee
@@ -31423,6 +31429,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.24205446, y: 0.89437914}
   m_EdgeRadius: 0
+--- !u!1 &2066481150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1405534727635575760, guid: 320538aca70be174ba525afcdf9d4219,
+    type: 3}
+  m_PrefabInstance: {fileID: 1405534726733858553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2102743262
 GameObject:
   m_ObjectHideFlags: 0
