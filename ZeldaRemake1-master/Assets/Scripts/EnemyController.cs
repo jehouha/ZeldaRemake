@@ -29,12 +29,16 @@ public class EnemyController : MonoBehaviour
     // Set rupee as loot
     public GameObject lootDrop;
 
+    // Spawn death particle system
+    public GameObject enemyParticle;
+
     void lifeCounter()
     {
         if (enemyLives <= 0)
         {
             Destroy(this.gameObject);
             GameObject a = Instantiate(lootDrop, transform.position, lootDrop.transform.rotation) as GameObject;
+            GameObject b = Instantiate(enemyParticle, transform.position, Quaternion.identity) as GameObject;
         }
     }
 

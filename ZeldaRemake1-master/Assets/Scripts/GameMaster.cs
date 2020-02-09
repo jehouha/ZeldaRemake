@@ -239,7 +239,7 @@ public class GameMaster : MonoBehaviour
     {
         transform.position = new Vector2(2.0f, 0.0f);
         Camera.main.transform.position = new Vector3(0.0f, 0.0f, -10f);
-        //dialogue.SetActive(false);
+        dialogue.SetActive(false);
     }
 
     // fieldroom1ToFieldroom2
@@ -480,6 +480,7 @@ public class GameMaster : MonoBehaviour
                 Debug.Log("gone thru door");
                 CameraMove7();
                 audioManager.PlaySound(doorSoundName);
+                keyHeld = false;
             }
             else
             {

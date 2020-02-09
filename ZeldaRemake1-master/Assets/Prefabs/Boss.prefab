@@ -258,7 +258,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2004554739
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f4f13f687aed0184aa502000984d15ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -284,7 +284,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008113861, y: 0.16263604}
+  m_Offset: {x: -0.0018930435, y: 0.21600437}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -295,7 +295,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.69377995, y: 0.35684633}
+  m_Size: {x: 1.0073185, y: 0.463583}
   m_EdgeRadius: 0
 --- !u!50 &2446321270426350472
 Rigidbody2D:
@@ -330,9 +330,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc114ef46ae7c0b42ba07b44580bf2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossDead: 0
   enemyLives: 2
   lootDrop: {fileID: 8168399081699810125, guid: 21d22f565cf0bb04a8dc47e8c0dce844,
+    type: 3}
+  enemyParticle: {fileID: 814767070871694654, guid: 5e2203a435633ff4b8aa8b17f47b6477,
     type: 3}
   enemyHitSoundName: enemyHit
   playerHitSoundName: playerHit

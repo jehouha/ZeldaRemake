@@ -4,7 +4,6 @@ ScriptsOnlyBuild:
     - AudioManager
     - BossController
     - EnemyController
-    - EnemyFollow_Controller
     - EnemyPath_Controller
     - GameManager
     - GameMaster
@@ -112,8 +111,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11102}
     - Class: 114
-      Script: {instanceID: 11104}
-    - Class: 114
       Script: {instanceID: 11142}
     - Class: 114
       Script: {instanceID: 11224}
@@ -128,6 +125,10 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -487,7 +488,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: b447e6e2ca12cf984e403f1a6865b4d3
+      Hash: 84a9970d9a1da9f51758d3ce89444d73
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BossController
@@ -727,7 +728,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: b447e6e2ca12cf984e403f1a6865b4d3
+      Hash: 84a9970d9a1da9f51758d3ce89444d73
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
@@ -803,4 +804,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Win.unity
   - Assets/Scenes/Lose.unity
-  playerPath: D:/UCF2020/Team_Project_v2.0/Team_Project_1.exe
+  playerPath: D:/UCF2020/Team_Project_v3.0/Team_Project_1.exe

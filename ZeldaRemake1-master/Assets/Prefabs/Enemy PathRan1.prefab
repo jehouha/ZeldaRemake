@@ -196,11 +196,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2446321270426350484}
   - component: {fileID: 2446321270426350474}
-  - component: {fileID: 2446321270426350473}
   - component: {fileID: 2446321270426350472}
   - component: {fileID: 2446321270426350487}
   - component: {fileID: 2446321270426350486}
   - component: {fileID: 2446321270426350485}
+  - component: {fileID: 981735191306269207}
   m_Layer: 8
   m_Name: Enemy Path Object (1)
   m_TagString: enemy
@@ -258,7 +258,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2004554739
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03e005235cc5ce747855c301d13c3ab1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -271,32 +271,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2446321270426350473
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2446321270426350483}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.008113861, y: 0.16263604}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.6}
-    newSize: {x: 2.69, y: 2.73}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.69377995, y: 0.35684633}
-  m_EdgeRadius: 0
 --- !u!50 &2446321270426350472
 Rigidbody2D:
   serializedVersion: 4
@@ -332,6 +306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLives: 1
   lootDrop: {fileID: 8168399081699810125, guid: 21d22f565cf0bb04a8dc47e8c0dce844,
+    type: 3}
+  enemyParticle: {fileID: 814767070871694654, guid: 5e2203a435633ff4b8aa8b17f47b6477,
     type: 3}
   enemyHitSoundName: enemyHit
   playerHitSoundName: playerHit
@@ -376,3 +352,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &981735191306269207
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446321270426350483}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.2054832}
+  serializedVersion: 2
+  m_Radius: 0.5197954

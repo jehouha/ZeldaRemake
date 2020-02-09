@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2513530553421367906}
   - component: {fileID: 2513530553421367909}
   - component: {fileID: 4426732491600118636}
+  - component: {fileID: 4944358429870875735}
   m_Layer: 8
   m_Name: Enemy Path Object
   m_TagString: enemy
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2004554739
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e0511acd1b18f8040aeafceb908e0d6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008113861, y: 0.04619658}
+  m_Offset: {x: -0.1531167, y: -0.078529}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.69377995, y: 1.1155813}
+  m_Size: {x: 0.59034824, y: 1.3650324}
   m_EdgeRadius: 0
 --- !u!50 &2513530553421367907
 Rigidbody2D:
@@ -146,6 +147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLives: 1
   lootDrop: {fileID: 8168399081699810125, guid: 21d22f565cf0bb04a8dc47e8c0dce844,
+    type: 3}
+  enemyParticle: {fileID: 814767070871694654, guid: 5e2203a435633ff4b8aa8b17f47b6477,
     type: 3}
   enemyHitSoundName: enemyHit
   playerHitSoundName: playerHit
@@ -184,6 +187,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &4944358429870875735
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513530553421367911}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.3954711, y: -0.39851356}
+  serializedVersion: 2
+  m_Radius: 0.38931763
 --- !u!1 &2513530554385811374
 GameObject:
   m_ObjectHideFlags: 0
